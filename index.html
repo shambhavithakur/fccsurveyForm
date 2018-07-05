@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Your Experience Using Mavin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/solid.css" integrity="sha384-TbilV5Lbhlwdyc4RuIV/JhD8NR+BfMrvz4BL5QFa2we1hQu6wvREr3v6XSRfCTRp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:700|Source+Sans+Pro:400,400i,600" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+</head>
+
+<body>
+    <div class="formContainer">
+        <form action="https://www.freecodecamp.com/email-submit" method='POST' name='mavin-survey' id='survey-form'>
+            <h1 id="title">Your Experience Using Mavin</h1>
+
+            <p id="description">It's been a year since you downloaded and used the Mavin travel app, and we are eager to know how it has simplified
+                your travel planning. Please take the following survey to share your feedback about the app and get a
+                <a href="#prizedetails">chance to win</a> fabulous prizes.</p>
+            <div class="conditions">
+                <div class='icon'>
+                    <i class='fas fa-hand-point-right'></i>
+                </div>
+                <div id='prizedetails' class="text">
+                    <p>As stipulated in our
+                        <a href="#">terms of service</a>, you must be in the 21-95 age group to use Mavin and, therefore, to take this
+                        survey. Once you submit the survey, you will automatically become eligible to win an
+                        <a href="#">all-expenses-paid trip for two</a> to the Mavin resort in Wuz City, Wyoming. You can also win
+                        <a href="#">various other prizes</a>.</p>
+                </div>
+            </div>
+            <p class='info info1'>Some of the requests and questions in this survey are required. You will be able to submit the survey after you
+                have responded to all these required requests and questions.</p>
+
+            <div class="border">
+                <h2>The Survey</h2>
+            </div>
+            <div>
+                <h2>Your Basic Details</h2>
+                <p class='info'>
+                    We are requesting these details so that we can identify you correctly during our lucky draws and contact you as quickly as
+                    possible if you win any prizes.
+                </p>
+            </div>
+            <div class='outer-wrapper'>
+                <label class='label-wrapper' for="name" id="name-label">Name</label>
+                <input class='input-wrapper' type="text" name='name' id="name" required placeholder='Octavio Zorfman'>
+                <span class="animatedBorder"></span>
+            </div>
+            <div class='outer-wrapper aligned1'>
+                <label class='label-wrapper' for="email" id="email-label">Email address</label>
+                <input class='input-wrapper' type="email" name='email' id="email" required placeholder='octavio@email.com'>
+                <span class="animatedBorder"></span>
+            </div>
+            <div class='outer-wrapper aligned2'>
+                <label class='label-wrapper' for="number" id="number-label">Age</label>
+                <input class='input-wrapper' type="number" name='age' id="number" min='21' max='95' required placeholder='65'>
+                <span class="animatedBorder"></span>
+            </div>
+            <div>
+                <h2 class='secondH2'>Questions About You and Mavin</h2>
+            </div>
+            <div class='outer-wrapper-radio'>
+                <label class='label-wrapper' for="numberOfTrips">During the past year, how many of your trips did you plan using Mavin?</label>
+                <div id="numberOfTrips">
+                    <div class="column1">
+                        <label class='has-radiobtn'>
+                            <input type="radio" name='numberOfTrips' value='1–3' required>1–3
+                            <span class="radioicon"></span>
+                        </label>
+                        <label class='has-radiobtn'>
+                            <input type="radio" name='numberOfTrips' value='4–6'>4–6
+                            <span class="radioicon"></span>
+                        </label>
+                        <label class='has-radiobtn'>
+                            <input type="radio" name='numberOfTrips' value='7–9'>7–9
+                            <span class="radioicon"></span>
+                        </label>
+                    </div>
+                    <div class="column2">
+                        <label class='has-radiobtn'>
+                            <input type="radio" name='numberOfTrips' value='10–12'>10–12
+                            <span class="radioicon"></span>
+                        </label>
+                        <label class='has-radiobtn'>
+                            <input type="radio" name='numberOfTrips' value='13–15'>13–15
+                            <span class="radioicon"></span>
+                        </label>
+                        <label class='has-radiobtn'>
+                            <input type="radio" name='numberOfTrips' value='>15'>&gt; 15
+                            <span class="radioicon"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class='outer-wrapper-check'>
+                <label class='label-wrapper' for="triptype">What type of trips did you plan using Mavin?
+                    <span class="optional">*not required</span>
+                </label>
+                <p class='info'>
+                    <em>Select all the options that apply.</em>
+                </p>
+                <div id="triptype">
+                    <div class="column1">
+                        <label class='has-checkbox'>
+                            <input type="checkbox" name='triptype' value='Business trip'>Business trip
+                            <span class="checkicon"></span>
+                        </label>
+
+                        <label class='has-checkbox'>
+                            <input type="checkbox" name='triptype' value='Solo vacation'>Solo vacation
+                            <span class="checkicon"></span>
+                        </label>
+
+                        <label class='has-checkbox'>
+                            <input type="checkbox" name='triptype' value='Family vacation'>Family vacation
+                            <span class="checkicon"></span>
+                        </label>
+
+                    </div>
+                    <div class="column2">
+                        <label class='has-checkbox'>
+                            <input type="checkbox" name='triptype' value='Romantic holiday'>Romantic holiday
+                            <span class="checkicon"></span>
+                        </label>
+
+                        <label class='has-checkbox'>
+                            <input type="checkbox" name='triptype' value='One-day getaway'>One-day getaway
+                            <span class="checkicon"></span>
+                        </label>
+
+                        <label class='has-checkbox'>
+                            <input type="checkbox" name='triptype' value='Weekend getaway'>Weekend getaway
+                            <span class="checkicon"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class='outer-wrapper-select'>
+                <label class='label-wrapper' for="dropdown">What role were you identifying with the most when you booked your travel on Mavin?
+                    <span class="optional">*not required</span>
+                </label>
+                <p class='info'>
+                    We are asking this question because we want to know how much impact your vocations or roles have on travel requirements and
+                    budgets. This information will help us offer competitive and reasonable discounts.
+                </p>
+                <div class="selectlist">
+                    <select id="dropdown" name="role">
+                        <option value='' disabled selected>Select an option</option>
+                        <option value="Student">Student</option>
+                        <option value="Teacher">Teacher</option>
+                        <option value="Homemaker">Homemaker</option>
+                        <option value="Business owner">Business owner</option>
+                        <option value="Business executive">Business executive</option>
+                        <option value="Government employee">Government employee</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <span class="animatedBorder"></span>
+            </div>
+            <div class='outer-wrapper-radio'>
+                <label class='label-wrapper' for="satisfactionLevel">How satisfied or dissatisfied were you with the travel and accommodation arrangements that you made through
+                    Mavin?
+                </label>
+                <div id="satisfactionLevel">
+                    <label class='has-radiobtn'>
+                        <input type="radio" name='satisfactionLevel' value='1' required>Very satisfied
+                        <span class="radioicon"></span>
+                    </label>
+
+                    <label class='has-radiobtn'>
+                        <input type="radio" name='satisfactionLevel' value='2'>Somewhat satisfied
+                        <span class="radioicon"></span>
+                    </label>
+
+                    <label class='has-radiobtn'>
+                        <input type="radio" name='satisfactionLevel' value='3'>Somewhat dissatisfied
+                        <span class="radioicon"></span>
+                    </label>
+
+                    <label class='has-radiobtn'>
+                        <input type="radio" name='satisfactionLevel' value='4'>Very dissatisfied
+                        <span class="radioicon"></span>
+                    </label>
+                </div>
+            </div>
+            <div class='outer-wrapper-check'>
+                <label class='label-wrapper' for="featuresLiked">Which features of Mavin do you like?
+                    <span class="optional">*not required</span>
+                </label>
+                <p class='info'>
+                    <em>Select all the options that apply.</em>
+                </p>
+                <div id="featuresLiked">
+                    <div class="column1">
+                        <label class='has-checkbox'>
+                            <input type="checkbox" name='featuresLiked' value='Ease of use'>Ease of use
+                            <span class="checkicon"></span>
+                        </label>
+
+                        <label class='has-checkbox'>
+                            <input type="checkbox" name='featuresLiked' value='Speed of access'>Speed of access
+                            <span class="checkicon"></span>
+                        </label>
+
+                        <label class='has-checkbox'>
+                            <input type="checkbox" name='featuresLiked' value='Low cost of bookings'>Low cost of bookings
+                            <span class="checkicon"></span>
+                        </label>
+
+                    </div>
+                    <div class="column2">
+                        <label class='has-checkbox'>
+                            <input type="checkbox" name='featuresLiked' value='Quality of booked services'>Quality of booked services
+                            <span class="checkicon"></span>
+                        </label>
+
+                        <label class='has-checkbox'>
+                            <input type="checkbox" name='featuresLiked' value='Variety of recommendations'>Variety of recommendations
+                            <span class="checkicon"></span>
+                        </label>
+
+                        <label class='has-checkbox'>
+                            <input type="checkbox" name='featuresLiked' value='Accuracy of recommendations'>Accuracy of recommendations
+                            <span class="checkicon"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class='outer-wrapper-check'>
+                <label class='label-wrapper' for="disliked">What do you dislike about Mavin?
+                    <span class="optional">*not required</span>
+                </label>
+                <p class='info'>
+                    <em>Select all the options that apply.</em>
+                </p>
+                <div id="disliked">
+                    <div class="column1">
+                        <label class='has-checkbox'>
+                            <input type="checkbox" name='disliked' value='An obtrusive user interface'>An obtrusive user interface
+                            <span class="checkicon"></span>
+                        </label>
+
+                        <label class='has-checkbox'>
+                            <input type="checkbox" name='disliked' value='Inaccurate recommendations'>Inaccurate recommendations
+                            <span class="checkicon"></span>
+                        </label>
+
+                        <label class='has-checkbox'>
+                            <input type="checkbox" name='disliked' value='Poor quality of booked services'>Poor quality of booked services
+                            <span class="checkicon"></span>
+                        </label>
+
+                    </div>
+                    <div class="column2">
+                        <label class='has-checkbox'>
+                            <input type="checkbox" name='disliked' value='Difficult-to-locate tools and commands'>A dearth of discounts and deals
+                            <span class="checkicon"></span>
+                        </label>
+
+                        <label class='has-checkbox'>
+                            <input type="checkbox" name='disliked' value='Difficult-to-locate tools and commands'>Difficult-to-locate tools and commands
+                            <span class="checkicon"></span>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+            <div class='outer-wrapper-radio'>
+                <label class='label-wrapper' for="recommendOthers">Will you recommend Mavin to someone else?</label>
+                <div id="recommendOthers">
+                    <label class='has-radiobtn'>
+                        <input type="radio" name='recommendOthers' value='1' required>Definitely
+                        <span class="radioicon"></span>
+                    </label>
+
+                    <label class='has-radiobtn'>
+                        <input type="radio" name='recommendOthers' value='2'>Maybe
+                        <span class="radioicon"></span>
+                    </label>
+
+                    <label class='has-radiobtn'>
+                        <input type="radio" name='recommendOthers' value='3'>Not sure
+                        <span class="radioicon"></span>
+                    </label>
+                </div>
+            </div>
+            <div class='outer-wrapper'>
+                <label class='label-wrapper' for="comments">Any comments and suggestions for us?</label>
+                <textarea class='input-wrapper' name="comments" id='comments' placeholder="Mavin should also..." spellcheck required></textarea>
+                <span class="animatedBorder"></span>
+            </div>
+            <button type='submit' name='submit' id='submit' value='Submit Survey'>
+                <span>Submit Survey </span>
+            </button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
