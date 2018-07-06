@@ -7,7 +7,7 @@ Basic reset
 *:before,
 *:after {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -28,13 +28,13 @@ body {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding: 1rem;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
@@ -84,9 +84,9 @@ p {
     font-size: 14px;
     color: rgba(102, 102, 102, 0.9);
     /* margin-top: 1.5rem;*/
-    margin-bottom: 1.5rem; 
+    margin-bottom: 1.5rem;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
 }
 
 .conditions .icon {
@@ -94,8 +94,8 @@ p {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     font-size: 16px;
     padding: 0 .5rem;
     color: hsla(357, 70%, 65%, 0.7);
@@ -107,7 +107,8 @@ p {
     padding: 1rem 1rem 0;
 }
 
-.info, .optional {
+.info,
+.optional {
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -115,11 +116,11 @@ p {
     margin-bottom: .5rem;
 }
 
-.info{
+.info {
     margin-top: .5rem;
 }
 
-.info1{
+.info1 {
     margin-bottom: 1.5rem;
     padding-bottom: 2rem;
     border-bottom: 2px dotted rgba(51, 51, 51, .35);
@@ -152,7 +153,7 @@ a:focus {
     overflow: hidden;
     padding: 2.5rem 2rem 2.5rem 2.5rem;
     -webkit-box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
-            box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 /* Form */
@@ -163,16 +164,16 @@ form {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 /* Form elements */
 
-input[type='text'], 
-input[type='email'], 
+input[type='text'],
+input[type='email'],
 input[type='number'],
 textarea {
     outline: none;
@@ -194,7 +195,7 @@ input[type="number"]::-webkit-inner-spin-button {
 input:required,
 input[type='radio'] {
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
 }
 
 textarea:focus,
@@ -268,7 +269,8 @@ textarea:focus:-ms-input-placeholder {
 
 /* Form-element wrappers */
 
-.outer-wrapper, .outer-wrapper-select{
+.outer-wrapper,
+.outer-wrapper-select {
     width: 100%;
     position: relative;
     border-bottom: 2px solid #ececec;
@@ -277,7 +279,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .outer-wrapper-radio,
-.outer-wrapper-check{
+.outer-wrapper-check {
     width: 100%;
     position: relative;
 }
@@ -324,15 +326,18 @@ textarea:focus:-ms-input-placeholder {
 
 .input-wrapper:focus+.animatedBorder::before {
     width: 100%;
-    background: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%); 
+    background: -webkit-gradient(linear, left top, right top, from(#f78ca0), color-stop(19%, #f9748f), color-stop(60%, #fd868c), to(#fe9a8b));
+    background: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
 }
 
 .contains-data.input-wrapper+.animatedBorder::before {
     width: 100%;
-    background: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%); 
+    background: -webkit-gradient(linear, left top, right top, from(#f78ca0), color-stop(19%, #f9748f), color-stop(60%, #fd868c), to(#fe9a8b));
+    background: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
 }
 
 /* Button */
+
 button {
     outline: none !important;
     border: none;
@@ -345,25 +350,28 @@ button:hover {
 
 #submit {
     color: #FFFFFF;
+    background: -webkit-gradient(linear, left top, right top, from(#f78ca0), color-stop(19%, #f9748f), color-stop(60%, #fd868c), to(#fe9a8b));
     background: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
     border: none;
     border-radius: .25rem;
     text-align: center;
     padding: 1.5rem;
     width: 100%;
+    -webkit-transition: all 0.4s;
     transition: all 0.4s;
     cursor: pointer;
 }
-    
+
 #submit span {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     font-size: 16px;
     display: inline-block;
     position: relative;
+    -webkit-transition: 0.4s;
     transition: 0.4s;
 }
-    
+
 #submit span:after {
     content: '\f101';
     font-family: 'Font Awesome 5 Free';
@@ -372,6 +380,7 @@ button:hover {
     opacity: 0;
     bottom: 0;
     right: -1.5rem;
+    -webkit-transition: 0.4s;
     transition: 0.4s;
 }
 
@@ -382,17 +391,21 @@ button:hover {
 #submit:hover span:after {
     opacity: 1;
     right: 0;
-} 
+}
 
-#submit:hover, #submit:focus{
+#submit:hover,
+#submit:focus {
+    background: -webkit-gradient(linear, left top, right top, from(#f02d51), to(#f51240));
     background: linear-gradient(to right, #f02d51 0%, #f51240 100%);
 }
 
 /* Checkbox with guidance from https://www.w3schools.com*/
-.column1{
+
+.column1 {
     margin-top: 1rem;
 }
-.has-checkbox{
+
+.has-checkbox {
     display: block;
     position: relative;
     padding-left: 2.5rem;
@@ -407,9 +420,9 @@ button:hover {
 .has-checkbox input {
     position: absolute;
     opacity: 0;
-  }
+}
 
-.checkicon{
+.checkicon {
     border: 2px solid #ececec;
     position: absolute;
     height: 1.75rem;
@@ -418,11 +431,11 @@ button:hover {
     left: 0;
 }
 
-.has-checkbox:hover input ~ .checkicon {
+.has-checkbox:hover input~.checkicon {
     border: 2px solid #c5c5c5;
 }
 
-.has-checkbox input:checked ~ .checkicon {
+.has-checkbox input:checked~.checkicon {
     border: 2px solid #fd868c;
 }
 
@@ -432,11 +445,11 @@ button:hover {
     display: none;
 }
 
-.has-checkbox input:checked ~ .checkicon:after {
+.has-checkbox input:checked~.checkicon:after {
     display: block;
 }
 
-.has-checkbox .checkicon:after{
+.has-checkbox .checkicon:after {
     left: 9px;
     top: 5px;
     width: 8px;
@@ -444,19 +457,19 @@ button:hover {
     border: solid #fd868c;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
 /* Radio button with guidance from https://www.w3schools.com */
+
 #numberOfTrips,
 #satisfactionLevel,
-#recommendOthers{
+#recommendOthers {
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
-.has-radiobtn{
+.has-radiobtn {
     display: block;
     position: relative;
     padding-left: 2.5rem;
@@ -471,9 +484,9 @@ button:hover {
 .has-radiobtn input {
     position: absolute;
     opacity: 0;
-  }
+}
 
-.radioicon{
+.radioicon {
     border: 2px solid #ececec;
     position: absolute;
     border-radius: 50%;
@@ -483,11 +496,11 @@ button:hover {
     left: 0;
 }
 
-.has-radiobtn:hover input ~ .radioicon {
+.has-radiobtn:hover input~.radioicon {
     border: 2px solid #c5c5c5;
 }
 
-.has-radiobtn input:checked ~ .radioicon {
+.has-radiobtn input:checked~.radioicon {
     border: 2px solid #fd868c;
 }
 
@@ -497,33 +510,37 @@ button:hover {
     display: none;
 }
 
-.has-radiobtn input:checked ~ .radioicon:after {
+.has-radiobtn input:checked~.radioicon:after {
     display: block;
 }
 
-.has-radiobtn .radioicon:after{
+.has-radiobtn .radioicon:after {
     border-radius: 50%;
     left: 4px;
-    top: 4px; 
+    top: 4px;
     width: 1rem;
     height: 1rem;
     background: #fd868c;
 }
 
 /* Select element with guidance from https://www.w3schools.com */
-.selectlist{
+
+.selectlist {
     position: relative;
     width: auto;
 }
+
 .selectlist:hover+.animatedBorder::before {
     width: 100%;
 }
+
 .selectlist:focus+.animatedBorder::before {
     width: 100%;
-    background: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%); 
+    background: -webkit-gradient(linear, left top, right top, from(#f78ca0), color-stop(19%, #f9748f), color-stop(60%, #fd868c), to(#fe9a8b));
+    background: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
 }
 
-.selectlist select{
+.selectlist select {
     font-family: 'Source Sans Pro', sans-serif;
     color: rgb(102, 102, 102);
     font-weight: inherit;
@@ -532,7 +549,7 @@ button:hover {
     display: none;
 }
 
-.selectlist{
+.selectlist {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -550,20 +567,25 @@ button:hover {
     margin: 0;
     border: .75rem solid transparent;
     border-color: #ececec transparent transparent transparent;
-  }
-  .first-option:hover:after{
+}
+
+.first-option:hover:after {
     border-color: #c5c5c5 transparent transparent transparent;
-  }
-  .first-option.twirl-arrow:after {
+}
+
+.first-option.twirl-arrow:after {
     border-color: transparent transparent #fd868c transparent;
     top: 7px;
-  }
-  .selection div,.first-option {
+}
+
+.selection div,
+.first-option {
     color: inherit;
     padding: 8px 16px;
     cursor: pointer;
-  }
-  .selection {
+}
+
+.selection {
     position: absolute;
     background-color: #fff;
     top: 100%;
@@ -572,16 +594,21 @@ button:hover {
     z-index: 99;
     border-top: 1px solid;
     border-color: #fd868c transparent transparent transparent;
-    box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.18);
-  }
-  .selection-hide {
+    -webkit-box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.18);
+            box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.18);
+}
+
+.selection-hide {
     display: none;
-  }
-  .selection div:hover, 
-  .same-as-selected {
+}
+
+.selection div:hover,
+.same-as-selected {
     color: white !important;
+    background: -webkit-gradient(linear, left top, right top, from(#f78ca0), color-stop(19%, #f9748f), color-stop(60%, #fd868c), to(#fe9a8b));
     background: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
-  }
+}
+
 /*--------------------------------------------------------------
 Media queries
 --------------------------------------------------------------*/
@@ -614,7 +641,8 @@ Media queries
     .conditions .icon {
         font-size: 18px;
     }
-    .info, .optional {
+    .info,
+    .optional {
         font-size: 16px;
         color: rgba(102, 102, 102, 0.75);
     }
@@ -628,15 +656,17 @@ Media queries
     .aligned2 {
         width: 25%;
     }
-
     /* checkbox grids */
-    #triptype, #featuresLiked, #disliked, #numberOfTrips{
+    #triptype,
+    #featuresLiked,
+    #disliked,
+    #numberOfTrips {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 1rem;
         margin-bottom: .5rem;
     }
-    .column1{
+    .column1 {
         margin-top: 0;
     }
 }
